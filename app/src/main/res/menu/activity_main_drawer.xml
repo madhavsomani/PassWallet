@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_site"
+            android:icon="@drawable/site"
+            android:title="Site" />
+        <item
+            android:id="@+id/nav_note"
+            android:icon="@drawable/note"
+            android:title="Secure Note" />
+        <item
+            android:id="@+id/nav_debitcard"
+            android:icon="@drawable/card"
+            android:title="Credit/Debit Card" />
+    </group>
+
+    <item android:title="Tools">
+        <menu>
+            <item
+                android:id="@+id/nav_master_password"
+                android:icon="@drawable/ic_menu_master_password"
+                android:title="Master Password Change" />
+            <item
+                android:id="@+id/nav_password_generator"
+                android:icon="@drawable/ic_menu_password_generator"
+                android:title="Password Generator " />
+        </menu>
+    </item>
+
+</menu>

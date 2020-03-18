@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Titile"
+        android:textColor="#ffffff"
+        android:id="@+id/displaytitile"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:textColor="#B6D4F6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/displaytext"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.98" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:textColor="#B6D4F6"
+        android:background="@drawable/backbut"
+        android:text="Delete"
+
+        android:id="@+id/displaynotedelete"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

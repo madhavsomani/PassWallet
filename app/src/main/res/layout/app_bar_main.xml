@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.pass.passwallet.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/toolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+
+            android:src="@android:drawable/ic_input_add"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="27dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/card"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom|end"
+
+            android:background="@drawable/card"
+            android:layout_marginBottom="33dp"
+            android:layout_above="@+id/fab"
+            android:layout_alignLeft="@+id/fab"
+            android:layout_alignStart="@+id/fab" />
+
+        <Button
+            android:id="@+id/note"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom|end"
+
+            android:background="@drawable/note"
+            android:layout_marginBottom="39dp"
+            android:layout_above="@+id/card"
+            android:layout_alignLeft="@+id/card"
+            android:layout_alignStart="@+id/card" />
+
+        <Button
+            android:id="@+id/site"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/site"
+            android:layout_marginBottom="34dp"
+            android:layout_above="@+id/note"
+            android:layout_alignLeft="@+id/note"
+            android:layout_alignStart="@+id/note" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Add Site  "
+            android:gravity="center"
+            android:id="@+id/textaddsitefab"
+            android:layout_alignTop="@+id/site"
+            android:layout_toLeftOf="@+id/site"
+            android:layout_toStartOf="@+id/site"
+            android:layout_alignBottom="@+id/site" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Add Note  "
+            android:gravity="center"
+            android:id="@+id/textaddnotefab"
+            android:layout_below="@+id/site"
+            android:layout_toLeftOf="@+id/note"
+            android:layout_toStartOf="@+id/note"
+            android:layout_alignBottom="@+id/note" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Add Card  "
+            android:gravity="center"
+            android:id="@+id/textaddcardfab"
+            android:layout_below="@+id/note"
+            android:layout_toLeftOf="@+id/card"
+            android:layout_toStartOf="@+id/card"
+            android:layout_alignBottom="@+id/card" />
+
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
